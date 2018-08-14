@@ -1615,6 +1615,8 @@ xkb_symbols "custom_us" {
     key <BKSL> {	[ backslash, bar, dead_abovedot, dead_belowdot]	};
 
     include "level3(ralt_switch)"
+    include "compose(rctrl)"
+
 };
 
 
