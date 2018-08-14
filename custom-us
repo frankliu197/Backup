@@ -1,0 +1,41 @@
+#!/bin/bash
+# This script will start and stop your custom keyboard if you have installed sogoupinyin. 
+# It belongs in the /usr/sbin folder.
+# Creator: Frank Liu
+# 
+# COMMANDS:
+# sudo custom-us --start      ->  starts up your custom keyboard and
+# sudo custom-us --stop       ->  starts up your sogou pinyin keyboard 
+#
+# TO RUN WITH KEYBOARD SHORTCUTS USE:
+# gksudo --bash custom-us --start
+# gksudo --bash custom-us --stop
+#
+# You may have to change the numbers in the file:
+# /etc/X11/Xsession.d/##sogoupinyin
+# as written twice below. These two numbers need to be changed so that 
+# they match an existing file on your system 
+#
+# 
+#
+# The script does its job by: 
+# Commenting lines out of startup scripts so the fcitx does not start when you want to use custom keyboard, and fcitx starts when you don't want to use your custom keyboard
+#
+
+# Ensures root permissions
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+if [[ $@ == "--start" ]]; then
+  # Prevents loadup of sogoupinyin and fcitx
+  sudo sed -i 's/export XMODIFIERS=@im=fcitx/#export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/72sogoupinyin
+  sudo systemctl restart lightdm
+elif [[ $@ == "--stop" ]]; then 
+  # Allows loadup of sogoupinyin and fcitx
+  sudo sed -i 's/#export XMODIFIERS=@im=fcitx/export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/72sogoupinyin
+  sudo systemctl restart lightdm
+fi
+
+

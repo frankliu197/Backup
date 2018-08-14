@@ -1,0 +1,17 @@
+# this is for you custom Compose Phrases
+# And other personal key combinations that you don't think should belong in the main file
+
+
+# Symbol Combinations For Typing (These are just examples)
+<Multi_key> <j> <p>                                        : "System.out.println("
+<Multi_key> <g> <c>                                        : "git commit -m \""
+<Multi_key> <X> <g>                                        : "cp ~/.XCompose ~/Backup/"
+<Multi_key> <K> <g>                                        : "cp /usr/share/X11/xkb/symbols/us ~/Backup/"
+<Multi_key> <S> <g>                                        : "sudo cp /usr/sbin/custom-us ~/Backup/"
+<Multi_key> <g> <A>                                        : "git add -A"
+<Multi_key> <g> <p>                                        : "git push origin master"
+<Multi_key> <g> <i>                                        : "git init"
+<Multi_key> <b> <t>                                        : "export TESTVAR="
+<Multi_key> <s> <e>                                        : "sudo env \"PATH=$PATH\" "
+
+
