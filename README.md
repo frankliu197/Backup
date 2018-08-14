@@ -18,31 +18,38 @@ Otherwise follow the instructions to set up the keyboard with default configurat
       sudo cp .XCompose ~/.XCompose
 
 4. In evdev.xml, inside the <layout> with the configItem us, e.g. 
-    <layout>
-      <configItem>
-        <name>us</name>
-        <shortDescription>en</shortDescription>
-        <description>English (US)</description>
-        <languageList>
-          <iso639Id>eng</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList>
+```javascript
+<layout>
+  <configItem>
+    <name>us</name>
+    <shortDescription>en</shortDescription>
+    <description>English (US)</description>
+    <languageList>
+      <iso639Id>eng</iso639Id>
+    </languageList>
+  </configItem>
+  <variantList>
+```
 
     add the following the the variant list:
-        <variant>
-          <configItem>
-            <name>custom_us</name>
-            <shortDescription>Custom US Keyboard</shortDescription>
-            <description>Custom US Keyboard</description>
-          </configItem>
-        </variant>
-
+```javascript
+    <variant>
+      <configItem>
+        <name>custom_us</name>
+        <shortDescription>Custom US Keyboard</shortDescription>
+        <description>Custom US Keyboard</description>
+      </configItem>
+    </variant>
+```
    Then in evdev.lst, under 
+```javascript
 ! variant
+```
    add: 
+```javascript
   custom_us       us: English (Custom)
-  
+```
+ 
     You may have to do the same thing for base.xml and base.lst
 
 5. Restart several services (Note: you will log out)
