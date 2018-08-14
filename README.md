@@ -1,19 +1,21 @@
-
-How to install this keyboard:
+## Installation
 
 If you want to learn how to set up your own keyboard, click here.
 Otherwise follow the instructions to set up the keyboard with default configurations.
   
 1. install uim (Universal Input Manager) on your Linux system. On Ubuntu, run:
+
       sudo apt install uim
 
 2. Add the following lines to your ~/.profile
+
       # Use uim instead of ibus or fcitx
       # Allows you to use the custom keyboard combinations
       export GTK_IM_MODULE=uim
       export QT_IM_MODULE=uim
 
 3. Move the keyboard settings files to thier proper place:
+
       sudo cp us /usr/share/X11/xkb/symbols/us
       sudo cp .XCompose ~/.XCompose
 
