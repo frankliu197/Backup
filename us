@@ -4,8 +4,7 @@ xkb_symbols "basic" {
     name[Group1]= "English (US)";
     key <TLDE> {	[     minusplus,	asciitilde	]	};
     key <AE01> {	[	  1,	exclam 		]	};
-    key <AE02> {	[	  2,	at		]	};
-    key <AE03> {	[	  3,	numbersign	]	};
+    key <AE02> {	[	  2,	at		]	}; key <AE03> {	[	  3,	numbersign	]	};
     key <AE04> {	[	  4,	dollar		]	};
     key <AE05> {	[	  5,	percent		]	};
     key <AE06> {	[	  6,	asciicircum	]	}; key <AE07> {	[	  7,	ampersand	]	};
@@ -1562,57 +1561,58 @@ partial alphanumeric_keys
 partial alphanumeric_keys
 xkb_symbols "custom_us" {
     name[Group1]= "English (Custom US)";
-    key <TLDE> {	[     grave,	asciitilde, minutes, degree]	};
-    key <AE01> {	[	  1,	exclam 		]	};
-    key <AE02> {	[	  2,	at		]	};
-    key <AE03> {	[	  3,	numbersign	]	};
-    key <AE04> {	[	  4,	dollar		]	};
-    key <AE05> {	[	  5,	percent		]	};
-    key <AE06> {	[	  6,	asciicircum	]	};
-    key <AE07> {	[	  7,	ampersand	]	};
-    key <AE08> {	[	  8,	asterisk	]	};
-    key <AE09> {	[	  9,	parenleft	]	};
-    key <AE10> {	[	  0,	parenright	]	};
-    key <AE11> {	[     minus,	underscore, dead_hook, dead_horn	]	};
-    key <AE12> {	[     equal,	plus, dead_greek, dead_currency		]	};
 
-    key <AD01> {	[	  q,	Q 	, U22C5, jot]	}; //dot operator
-    key <AD02> {	[	  w,	W		, U2203, therefore]	}; //there exists
-    key <AD03> {	[	  e,	E		, U220A, U2208]	}; //element of
-    key <AD04> {	[	  r,	R		, U220D, U220B]	}; //element of opposite
-    key <AD05> {	[	  t,	T		, U227A, U22B0]	}; //preceeds
-    key <AD06> {	[	  y,	Y		, U227B, U22B1]	}; //succeeds
-    key <AD07> {	[	  u,	U		, U2308, U27E8]	}; //left ceiling, angle brackets
-    key <AD08> {	[	  i,	I		, U2309, U27E9]	}; //right ceiling, angle brackets 
-    key <AD09> {	[	  o,	O		, U27E6, U231C]}; //left double square bracket, top left corner
-    key <AD10> {	[	  p,	P		, U27E7, U231D]	}; //right double square bracket, top right corner
-    key <AD11> {	[ bracketleft,	braceleft	, acute, asciicircum]	};
-    key <AD12> {	[ bracketright,	braceright, grave, caron	]	};
+    key <TLDE> {  [  grave         ,  asciitilde        ,  minutes            ,  degree         ] } ;
+    key <AE01> {  [  1             ,  exclam                                                    ] } ;
+    key <AE02> {  [  2             ,  at                                                        ] } ;
+    key <AE03> {  [  3             ,  numbersign                                                ] } ;
+    key <AE04> {  [  4             ,  dollar                                                    ] } ;
+    key <AE05> {  [  5             ,  percent                                                   ] } ;
+    key <AE06> {  [  6             ,  asciicircum                                               ] } ;
+    key <AE07> {  [  7             ,  ampersand                                                 ] } ;
+    key <AE08> {  [  8             ,  asterisk                                                  ] } ;
+    key <AE09> {  [  9             ,  parenleft                                                 ] } ;
+    key <AE10> {  [  0             ,  parenright                                                ] } ;
+    key <AE11> {  [  minus         ,  underscore        ,  dead_hook          ,  dead_horn      ] } ;
+    key <AE12> {  [  equal         ,  plus              ,  dead_greek         ,  dead_currency  ] } ;
 
-    key <AC01> {	[	  a,	A 	]	};
-    key <AC02> {	[	  s,	S	, section, paragraph]	};
-    key <AC03> {	[	  d,	D	, partialderivative, mu]	};
-    key <AC04> {	[	  f,	F	, U2229, U2227]	}; //intesection, logical and
-    key <AC05> {	[	  g,	G 	]	};
-    key <AC06> {	[	  h,	H	, lefttack, uptack	]	};
-    key <AC07> {	[	  j,	J	, righttack, downtack 	]	};
-    key <AC08> {	[	  k,	K	, includedin, U22B2	]	};
-    key <AC09> {	[	  l,	L	, includes, U22B3	]	};
-    key <AC10> {	[ semicolon,	colon, macron, tilde	]	};
-    key <AC11> {	[ apostrophe,	quotedbl, diaeresis, cedilla]	};
+    key <AD01> {  [  q             ,  Q                 ,  U22C5              ,  jot            ] } ; //dot operator
+    key <AD02> {  [  w             ,  W                 ,  U2203              ,  therefore      ] } ; //there exists
+    key <AD03> {  [  e             ,  E                 ,  U220A              ,  U2208          ] } ; //element of
+    key <AD04> {  [  r             ,  R                 ,  U220D              ,  U220B          ] } ; //element of opposite
+    key <AD05> {  [  t             ,  T                 ,  U227A              ,  U22B0          ] } ; //preceeds
+    key <AD06> {  [  y             ,  Y                 ,  U227B              ,  U22B1          ] } ; //succeeds
+    key <AD07> {  [  u             ,  U                 ,  U2308              ,  U27E8          ] } ; //left ceiling                 ,  angle brackets
+    key <AD08> {  [  i             ,  I                 ,  U2309              ,  U27E9          ] } ; //right ceiling                ,  angle brackets
+    key <AD09> {  [  o             ,  O                 ,  U27E6              ,  U231C          ] } ; //left double square bracket     ,  top left corner
+    key <AD10> {  [  p             ,  P                 ,  U27E7              ,  U231D          ] } ; //right double square bracket  ,  top right corner
+    key <AD11> {  [  bracketleft   ,  braceleft         ,  acute              ,  asciicircum    ] } ;
+    key <AD12> {  [  bracketright  ,  braceright        ,  grave              ,  caron          ] } ;
 
-    key <AB01> {	[	  z,	Z , multiply, U00F7]	}; //divide
-    key <AB02> {	[	  x,	X		]	};
-    key <AB03> {	[	  c,	C		]	};
-    key <AB04> {	[	  v,	V		]	};
-    key <AB05> {	[	  b,	B		, U226C, U224D]	}; //between, equals
-    key <AB06> {	[	  n,	N		, U222B, U222E]	}; //integrals
-    key <AB07> {	[	  m,	M		, U2232, U2233]	}; //integrals
-    key <AB08> {	[     comma,	less		]	};
-    key <AB09> {	[    period,	greater, U2215, U221A	]	}; //division slash, square root
-    key <AB10> {	[     slash,	question, circle, U25A1	]	}; //
+    key <AC01> {  [  a             ,  A                                                         ] } ;
+    key <AC02> {  [  s             ,  S                 ,  section            ,  paragraph      ] } ;
+    key <AC03> {  [  d             ,  D                 ,  partialderivative  ,  mu             ] } ;
+    key <AC04> {  [  f             ,  F                 ,  U2229              ,  U2227          ] } ; //intesection                  ,  logical and
+    key <AC05> {  [  g             ,  G                                                         ] } ;
+    key <AC06> {  [  h             ,  H                 ,  lefttack           ,  uptack         ] } ;
+    key <AC07> {  [  j             ,  J                 ,  righttack          ,  downtack       ] } ;
+    key <AC08> {  [  k             ,  K                 ,  includedin         ,  U22B2          ] } ;
+    key <AC09> {  [  l             ,  L                 ,  includes           ,  U22B3          ] } ;
+    key <AC10> {  [  semicolon     ,  colon             ,  macron             ,  tilde          ] } ;
+    key <AC11> {  [  apostrophe    ,  quotedbl          ,  diaeresis          ,  cedilla        ] } ;
 
-    key <BKSL> {	[ backslash, bar, dead_abovedot, dead_belowdot]	};
+    key <AB01> {  [  z             ,  Z                 ,  multiply           ,  U00F7          ] } ; //divide
+    key <AB02> {  [  x             ,  X                                                         ] } ;
+    key <AB03> {  [  c             ,  C                                                         ] } ;
+    key <AB04> {  [  v             ,  V                                                         ] } ;
+    key <AB05> {  [  b             ,  B                 ,  U226C              ,  U224D          ] } ; //between                      ,  equals
+    key <AB06> {  [  n             ,  N                 ,  U222B              ,  U222E          ] } ; //integrals
+    key <AB07> {  [  m             ,  M                 ,  U2232              ,  U2233          ] } ; //integrals
+    key <AB08> {  [  comma         ,  less                                                      ] } ;
+    key <AB09> {  [  period        ,  greater           ,  U2215              ,  U221A          ] } ; //division slash               ,  square root
+    key <AB10> {  [  slash         ,  question          ,  circle             ,  U25A1          ] } ;
+
+    key <BKSL> {  [  backslash     ,  bar               ,  dead_abovedot      ,  dead_belowdot  ] } ;
 
     include "level3(ralt_switch)"
     include "compose(rctrl)"
