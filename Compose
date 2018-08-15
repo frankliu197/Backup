@@ -13,5 +13,5 @@
 <Multi_key> <g> <i>                                        : "git init"
 <Multi_key> <b> <t>                                        : "export TESTVAR="
 <Multi_key> <s> <e>                                        : "sudo env \"PATH=$PATH\" "
-
+<Multi_key> <f> <u>                                        : "sudo mkfs.vfat "
 
