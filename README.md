@@ -43,15 +43,18 @@ add the following the the variant list:
     </variant>
 ```
 Then in evdev.lst, under 
-```javascript
+```
 ! variant
 ```
    add: 
-```javascript
+```
   custom_us       us: English (Custom)
 ```
-You may have to do the same thing for base.xml and base.lst
-
+You may have to do the same thing for base.xml and base.lst. A simple shortcut would be to execute the following two commands:
+```
+sudo cp /usr/share/X11/xkb/rules/evdev.lst /usr/share/X11/xkb/rules/base.lst
+sudo cp /usr/share/X11/xkb/rules/evdev.xml /usr/share/X11/xkb/rules/base.xml
+```
 5. Restart several services (Note: you will log out)
 ```
 setxkbmap
