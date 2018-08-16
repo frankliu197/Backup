@@ -1,25 +1,28 @@
+## Introduction
+
+
+
 ## Installation
 
 If you want to learn how to set up your own keyboard, click here.
 Otherwise follow the instructions to set up the keyboard with default configurations.
-  
-1. install uim (Universal Input Manager) on your Linux system. On Ubuntu, run:
+WARNING: If you have made your own compose file or changed files in the xkb folder, you may have to tweak the steps below so it would be compatable with your current keyboard.
+
+1. Download the keyboard source code into your computer.
 ```
-sudo apt install uim
+git clone https://github.com/frankliu197/Compose 
+cd Compose
 ```
-2. Add the following lines to your ~/.profile
-```
-# Use uim instead of ibus or fcitx
-# Allows you to use the custom keyboard combinations
-export GTK_IM_MODULE=uim
-export QT_IM_MODULE=uim
-```
-3. Move the keyboard settings files to thier proper place:
+2. Move the keyboard settings files onto your computer:
 ```
 sudo cp us /usr/share/X11/xkb/symbols/us
-sudo cp .XCompose ~/.XCompose
+ln -sf .XCompose ~/.XCompose
+``` 
+3. Change directory into /usr/share/X11/xkb/rules/ and change several configuration files
 ```
-4. In evdev.xml, inside the <layout> with the configItem us, e.g. 
+cd /usr/share/X11/xkb/rules
+```
+In /usr/share/X11/xkb/rules/evdev.xml, inside the \<layout\> with the configItem us, e.g. 
 ```xml
 <layout>
   <configItem>
@@ -55,9 +58,24 @@ You may have to do the same thing for base.xml and base.lst. A simple shortcut w
 sudo cp /usr/share/X11/xkb/rules/evdev.lst /usr/share/X11/xkb/rules/base.lst
 sudo cp /usr/share/X11/xkb/rules/evdev.xml /usr/share/X11/xkb/rules/base.xml
 ```
-5. Restart several services (Note: you will log out)
+
+4. Install uim (Universal Input Manager) on your Linux system. On Ubuntu, run:
+```
+sudo apt install uim
+```
+5. Add the following lines to your ~/.profile
+```
+# Use uim instead of ibus or fcitx
+# Allows you to use the custom keyboard combinations
+export GTK_IM_MODULE=uim
+export QT_IM_MODULE=uim
+```
+
+4. 5. Restart several services (Note: you will log out)
 ```
 setxkbmap
 sudo systemctl restart lightdm
 ```
 6. The custom-us keyboard should pop up as one of the keyboards in Settings→ Keyboards. Add the keyboard layout to your layout list and enjoy!
+
+## Usage
