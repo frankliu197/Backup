@@ -1609,8 +1609,8 @@ xkb_symbols "custom_us" {
     key <AB06> {  [  n             ,  N                 ,  U222B              ,  U222E          ] } ; //integrals
     key <AB07> {  [  m             ,  M                 ,  U2232              ,  U2233          ] } ; //integrals
     key <AB08> {  [  comma         ,  less                                                      ] } ;
-    key <AB09> {  [  period        ,  greater           ,  U2215              ,  U221A          ] } ; //division slash               ,  square root
-    key <AB10> {  [  slash         ,  question          ,  circle             ,  U25A1          ] } ;
+    key <AB09> {  [  period        ,  greater           ,  circle             ,  U25A1          ]  } ; //division slash               ,  square root
+    key <AB10> {  [  slash         ,  question          ,  U2215              ,  U221A          ]} ;
 
     key <BKSL> {  [  backslash     ,  bar               ,  dead_abovedot      ,  dead_belowdot  ] } ;
 

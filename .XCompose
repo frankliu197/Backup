@@ -41,196 +41,196 @@
 include "%H/Compose/Compose"
 
 # operators (order mostly by unicode)
-<Multi_key> <plus> <minus>                                 : "±"   plusminus        # PLUS-MINUS SIGN
-<Multi_key> <dead_hook> <minus> <plus>                     : "±"   plusminus        # PLUS-MINUS SIGN
-<Multi_key> <minus> <plus>                                 : "∓"   U2213            # MINUS-PLUS SIGN
-<Multi_key> <dead_hook> <plus> <minus>                     : "∓"   U2213		         # MINUS-PLUS SIGN
-<Multi_key> <period> <minus> <period>                      : "÷"   division         # DIVISION SIGN
+<Multi_key> <plus> <minus> <space>                         : "±"   plusminus        # PLUS-MINUS SIGN
+<Multi_key> <dead_hook> <minus> <plus> <space>             : "±"   plusminus        # PLUS-MINUS SIGN
+<Multi_key> <minus> <plus> <space>                         : "∓"   U2213            # MINUS-PLUS SIGN
+<Multi_key> <dead_hook> <plus> <minus> <space>             : "∓"   U2213		         # MINUS-PLUS SIGN
+<Multi_key> <period> <minus> <period> <space>              : "÷"   division         # DIVISION SIGN
 
 <dead_hook> <A>                                            : "∀"   U2200            # FOR ALL
-<Multi_key> <U2203> <slash>                                : "∄"   U2204            # THERE DOES NOT EXIST
-<Multi_key> <slash> <U2203>                                : "∄"   U2204            # THERE DOES NOT EXIST
-<Multi_key> <circle> <slash>                               : "∅"   U2205            # EMPTY SET
-<Multi_key> <slash> <circle>                               : "∅"   U2205            # EMPTY SET
+<Multi_key> <U2203> <slash> <space>                        : "∄"   U2204            # THERE DOES NOT EXIST
+<Multi_key> <slash> <U2203> <space>                        : "∄"   U2204            # THERE DOES NOT EXIST
+<Multi_key> <circle> <slash> <space>                       : "∅"   U2205            # EMPTY SET
+<Multi_key> <slash> <circle> <space>                       : "∅"   U2205            # EMPTY SET
 <dead_greek> <dead_hook> <D>                               : "∇"   U2207            # NABLA
 <dead_hook> <dead_greek> <D>                               : "∇"   U2207            # NABLA
-<Multi_key> <slash> <U2208>                                : "∉"   U2209            # ∈ NOT AN ELEMENT OF
-<Multi_key> <U2208> <slash>                                : "∉"   U2209            # ∈ NOT AN ELEMENT OF
-<Multi_key> <slash> <U220C>                                : "∌"   U220C            # ∈ DOES NOT CONTAIN AS MEMBER
-<Multi_key> <U220C> <slash>                                : "∌"   U220C            # ∈ DOES NOT CONTAIN AS MEMBER
+<Multi_key> <slash> <U2208> <space>                        : "∉"   U2209            # ∈ NOT AN ELEMENT OF
+<Multi_key> <U2208> <slash> <space>                        : "∉"   U2209            # ∈ NOT AN ELEMENT OF
+<Multi_key> <slash> <U220C> <space>                        : "∌"   U220C            # ∈ DOES NOT CONTAIN AS MEMBER
+<Multi_key> <U220C> <slash> <space>                        : "∌"   U220C            # ∈ DOES NOT CONTAIN AS MEMBER
 <dead_hook> <dead_greek> <P>                               : "∐"   U2210            # N-ARY COPRODUCT
 <dead_greek> <dead_hook> <P>                               : "∐"   U2210            # N-ARY COPRODUCT
-<Multi_key> <period> <plus>                                : "∔"   U2214            # DOT PLUS
-<Multi_key> <3> <U221A>                                    : "∛"   U221b            # v / THIRD ROOT
-<Multi_key> <4> <U221A>                                    : "∜"   U221c            # v / FOURTH ROOT
-<Multi_key> <jot> <c>                                      : "∝"   U221D            # PROPORTIONAL
-<Multi_key> <circle> <c>                                   : "∝"   U221D            # PROPORTIONAL
-<Multi_key> <jot> <jot>                                    : "∞"   infinity         # INFINITY
-<Multi_key> <circle> <circle>                              : "∞"   infinity         # INFINITY
-<Multi_key> <bar> <slash>                                  : "∤"   U2224            # DOES NOT DIVIDE
-<Multi_key> <slash> <bar>                                  : "∤"   U2224            # DOES NOT DIVIDE
+<Multi_key> <period> <plus> <space>                        : "∔"   U2214            # DOT PLUS
+<Multi_key> <3> <U221A> <space>                            : "∛"   U221b            # v / THIRD ROOT
+<Multi_key> <4> <U221A> <space>                            : "∜"   U221c            # v / FOURTH ROOT
+<Multi_key> <jot> <c> <space>                              : "∝"   U221D            # PROPORTIONAL
+<Multi_key> <circle> <c> <space>                           : "∝"   U221D            # PROPORTIONAL
+<Multi_key> <jot> <jot> <space>                            : "∞"   infinity         # INFINITY
+<Multi_key> <circle> <circle> <space>                      : "∞"   infinity         # INFINITY
+<Multi_key> <bar> <slash> <space>                          : "∤"   U2224            # DOES NOT DIVIDE
+<Multi_key> <slash> <bar> <space>                          : "∤"   U2224            # DOES NOT DIVIDE
 <Multi_key> <bar> <bar> <space>                            : "∥"   U2225            # PARALLEL TO
-<Multi_key> <bar> <bar> <slash>                            : "∦"   U2226            # NOT PARALLEL TO
+<Multi_key> <bar> <bar> <slash> <space>                    : "∦"   U2226            # NOT PARALLEL TO
 <dead_hook> <U2227>                                        : "∨"   U2228            # ∧ LOGICAL OR
 <dead_hook> <U2229>                                        : "∪"   U222A            # ∩ UNION
 <Multi_key> <U222B> <U222B> <space>                        : "∬"   U222C            # ∫ ∫ DOUBLE INTEGRAL
-<Multi_key> <U222B> <U222B> <U222B>                        : "∭"   U222D            # ∫ ∫ ∫ TRIPLE INTEGRAL
-<Multi_key> <U222B> <circle>                               : "∮"   U222E            # ∫ CONTOUR INTEGRAL
-<Multi_key> <U222B> <jot>                                  : "∮"   U222E            # ∫ CONTOUR INTEGRAL
+<Multi_key> <U222B> <U222B> <U222B> <space>                : "∭"   U222D            # ∫ ∫ ∫ TRIPLE INTEGRAL
+<Multi_key> <U222B> <circle> <space>                       : "∮"   U222E            # ∫ CONTOUR INTEGRAL
+<Multi_key> <U222B> <jot> <space>                          : "∮"   U222E            # ∫ CONTOUR INTEGRAL
 <Multi_key> <U222E> <U222E> <space>                        : "∯"   U222F            # ∮ ∮ SURFACE INTEGRAL
-<Multi_key> <U222E> <U222E> <U222E>                        : "∰"   U222F            # ∮ ∮ ∮ VOLUMN INTEGRAL
-<Multi_key> <dead_hook> <U2232>                            : "∳"   U2233            # ∲ ANTI-CLOCKWISE CONTOUR INTEGRAL
+<Multi_key> <U222E> <U222E> <U222E> <space>                : "∰"   U222F            # ∮ ∮ ∮ VOLUMN INTEGRAL
+<Multi_key> <dead_hook> <U2232> <space>                    : "∳"   U2233            # ∲ ANTI-CLOCKWISE CONTOUR INTEGRAL
 <dead_hook> <because>                                      : "∴"   therefore        # THEREFORE
 <dead_hook> <therefore>                                    : "∵"   because          # BECAUSE
-<Multi_key> <colon> <colon>                                : "∷"   U2237            # PROPORTION
+<Multi_key> <colon> <colon> <space>                        : "∷"   U2237            # PROPORTION
 <Multi_key> <period> <minus> <space>                       : "∸"   U2238            # DOT MINUS
-<Multi_key> <minus> <colon>                                : "∹"   U2239            # EXCESS
-<Multi_key> <colon> <minus> <colon>                        : "∺"   U223A            # GEOMETRIC PROPORTION
-<Multi_key> <period> <asciitilde> <period>                 : "∻"   U223B            # HOMOTHETIC
-<dead_hook> <asciitilde> <space>                           : "∽"   U223D            # REVERSE TILDE
-<Multi_key> <asciitilde> <slash>                           : "≁"   U2241            # NOT TILDE
-<Multi_key> <minus> <asciitilde>                           : "≂"   U2242            # MINUS TILDE
+<Multi_key> <minus> <colon> <space>                        : "∹"   U2239            # EXCESS
+<Multi_key> <colon> <minus> <colon> <space>                : "∺"   U223A            # GEOMETRIC PROPORTION
+<Multi_key> <period> <asciitilde> <period> <space>         : "∻"   U223B            # HOMOTHETIC
+<dead_hook> <asciitilde>                                   : "∽"   U223D            # REVERSE TILDE
+<Multi_key> <asciitilde> <slash> <space>                   : "≁"   U2241            # NOT TILDE
+<Multi_key> <minus> <asciitilde> <space>                   : "≂"   U2242            # MINUS TILDE
 <Multi_key> <asciitilde> <underscare> <space>              : "≃"   U2243            # ASYMPTOTICALLY EQUAL TO
-<Multi_key> <asciitilde> <underscore> <slash>              : "≄"   U2244            # NOT ASYMPTOTICALLY EQUAL TO
+<Multi_key> <asciitilde> <underscore> <slash> <space>      : "≄"   U2244            # NOT ASYMPTOTICALLY EQUAL TO
 <Multi_key> <asciitilde> <equal> <space>                   : "≅"   U2245            # APPROXIMATELY EQUAL TO
-<Multi_key> <asciitilde> <slash> <equal>                   : "≆"   U2246            # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
-<Multi_key> <asciitilde> <equal> <slash>                   : "≆"   U2247            # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL
+<Multi_key> <asciitilde> <slash> <equal> <space>           : "≆"   U2246            # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <asciitilde> <equal> <slash> <space>           : "≆"   U2247            # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL
 <Multi_key> <asciitilde> <asciitilde> <space>              : "≈"   U2248            # ALMOST EQUAL TO
-<Multi_key> <asciitilde> <asciitilde> <slash>              : "≉"   U2249            # NOT ALMOST EQUAL TO
-<Multi_key> <asciitilde> <asciitilde> <underscore>         : "≊"   U224A            # ALMOST EQUAL OR EQUAL TO
-<Multi_key> <asciitilde> <asciitilde> <asciitilde>         : "≋"   U224B            # TRIPLE TILDE
-<Multi_key> <dead_hook> <asciitilde> <equal>               : "≌"   U224C            # ALL EQUAL TO
+<Multi_key> <asciitilde> <asciitilde> <slash> <space>      : "≉"   U2249            # NOT ALMOST EQUAL TO
+<Multi_key> <asciitilde> <asciitilde> <underscore> <space> : "≊"   U224A            # ALMOST EQUAL OR EQUAL TO
+<Multi_key> <asciitilde> <asciitilde> <asciitilde> <space> : "≋"   U224B            # TRIPLE TILDE
+<Multi_key> <dead_hook> <asciitilde> <equal> <space>       : "≌"   U224C            # ALL EQUAL TO
 <Multi_key> <period> <equal> <space>                       : "≐"   U2250            # APPROACHES THE LIMIT
-<Multi_key> <period> <equal> <period>                      : "≑"   U2251            # GEOMETRICALLY EQUAL TO
-<Multi_key> <colon> <equal>                                : "≔"   U2254            # COLON EQUALS
-<Multi_key> <equal> <colon>                                : "≕"   U2255            # EQUALS COLON
-<Multi_key> <dead_greek> <D> <equal>                       : "≜"   U225C            # DELTA EQUALS
-<Multi_key> <d> <e> <f> <equal>                            : "≝"   U225D            # EQUAL BY DEFINITION
-<Multi_key> <slash> <equal>                                : "≠"   U2260            # NOT EQUAL TO
-<Multi_key> <equal> <slash>                                : "≠"   U2260            # NOT EQUAL TO
+<Multi_key> <period> <equal> <period> <space>              : "≑"   U2251            # GEOMETRICALLY EQUAL TO
+<Multi_key> <colon> <equal> <space>                        : "≔"   U2254            # COLON EQUALS
+<Multi_key> <equal> <colon> <space>                        : "≕"   U2255            # EQUALS COLON
+<Multi_key> <dead_greek> <D> <equal> <space>               : "≜"   U225C            # DELTA EQUALS
+<Multi_key> <d> <e> <f> <equal> <space>                    : "≝"   U225D            # EQUAL BY DEFINITION
+<Multi_key> <slash> <equal> <space>                        : "≠"   U2260            # NOT EQUAL TO
+<Multi_key> <equal> <slash> <space>                        : "≠"   U2260            # NOT EQUAL TO
 <Multi_key> <equal> <underscore> <space>                   : "≡"   U2261            # = _ IDENTICAL TO
 <Multi_key> <underscore> <equal> <space>                   : "≡"   U2261            # = _ IDENTICAL TO
-<Multi_key> <equal> <underscore> <slash>                   : "≢"   U2262            # ≠ _ NOT IDENTICAL TO
-<Multi_key> <underscore> <equal> <slash>                   : "≢"   U2262            # ≠ _ NOT IDENTICAL TO
-<Multi_key> <equal> <equal>                                : "≣"   U2263            # STRICTLY EQUIVALENT TO
+<Multi_key> <equal> <underscore> <slash> <space>           : "≢"   U2262            # ≠ _ NOT IDENTICAL TO
+<Multi_key> <underscore> <equal> <slash> <space>           : "≢"   U2262            # ≠ _ NOT IDENTICAL TO
+<Multi_key> <equal> <equal> <space>                        : "≣"   U2263            # STRICTLY EQUIVALENT TO
 <Multi_key> <less> <underscore> <space>                    : "≤"   U2264            # < _ LESS-THAN OR EQUAL TO
 <Multi_key> <greater> <underscore> <space>                 : "≥"   U2265            # > _ GREATER-THAN OR EQUAL TO
 <Multi_key> <less> <equal> <space>                         : "≦"   U2266            # < = LESS-THAN OVER EQUAL TO
 <Multi_key> <greater> <equal> <space>                      : "≧"   U2267            # > = GREATER-THAN OVER EQUAL TO
-<Multi_key> <less> <slash> <equal>                         : "≨"   U2268            # < \ = LESS-THAN BUT NOT EQUAL TO
-<Multi_key> <greater> <slash> <equal>                      : "≩"   U2269            # > \ = GREATER-THAN BUT NOT EQUAL TO
+<Multi_key> <less> <slash> <equal> <space>                 : "≨"   U2268            # < \ = LESS-THAN BUT NOT EQUAL TO
+<Multi_key> <greater> <slash> <equal> <space>              : "≩"   U2269            # > \ = GREATER-THAN BUT NOT EQUAL TO
 <Multi_key> <less> <less> <space>                          : "«"   guillemotleft    # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
 <Multi_key> <greater> <greater> <space>                    : "»"   guillemotright   # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
-<Multi_key> <U224D> <slash>                                : "≭"   U226D            # NOT EQUIVALENT TO
+<Multi_key> <U224D> <slash> <space>                        : "≭"   U226D            # NOT EQUIVALENT TO
 <Multi_key> <slash> <less> <space>                         : "≮"   U226E            # NOT LESS-THAN
 <Multi_key> <less> <slash> <space>                         : "≮"   U226E            # NOT LESS-THAN
 <Multi_key> <slash> <greater> <space>                      : "≯"   U226F            # NOT GREATER-THAN
 <Multi_key> <greater> <slash> <space>                      : "≯"   U226F            # NOT GREATER-THAN
-<Multi_key> <less> <underscore> <slash>                    : "≰"   U2270            # NEITHER LESS-THAN NOR EQUAL TO
-<Multi_key> <greater> <underscore> <slash>                 : "≱"   U2271            # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <less> <underscore> <slash> <space>            : "≰"   U2270            # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <greater> <underscore> <slash> <space>         : "≱"   U2271            # NEITHER GREATER-THAN NOR EQUAL TO
 <Multi_key> <less> <asciitilde> <space>                    : "≲"   U2272            # LESS-THAN OR EQUIVALENT TO
 <Multi_key> <greater> <asciitilde> <space>                 : "≳"   U2273            # GREATER-THAN OR EQUIVALENT TO
-<Multi_key> <less> <asciitilde> <slash>                    : "≴"   U2274            # NEITHER LESS-THAN NOR EQUIVALENT TO
-<Multi_key> <greater> <asciitilde> <slash>                 : "≵"   U2275            # NEITHER GREATER-THAN NOR EQUIVALENT TO
+<Multi_key> <less> <asciitilde> <slash> <space>            : "≴"   U2274            # NEITHER LESS-THAN NOR EQUIVALENT TO
+<Multi_key> <greater> <asciitilde> <slash> <space>         : "≵"   U2275            # NEITHER GREATER-THAN NOR EQUIVALENT TO
 <Multi_key> <less> <greater> <space>                       : "≶"   U2276            # LESS-THAN OR GREATER-THAN
 <Multi_key> <greater> <less> <space>                       : "≷"   U2277            # GREATHER-THAN OR LESS-THAN
-<Multi_key> <less> <greater> <slash>                       : "≸"   U2278            # NEITHER LESS-THAN NOR GREATER-THAN
-<Multi_key> <greater> <less> <slash>                       : "≹"   U2279            # NEITHER GREATER-THAN NOR LESS-THAN
+<Multi_key> <less> <greater> <slash> <space>               : "≸"   U2278            # NEITHER LESS-THAN NOR GREATER-THAN
+<Multi_key> <greater> <less> <slash> <space>               : "≹"   U2279            # NEITHER GREATER-THAN NOR LESS-THAN
 <Multi_key> <U227A> <underscore> <space>                   : "≼"   U227C            # ≺ PRECEDES OR EQUAL TO
 <Multi_key> <U227B> <underscore> <space>                   : "≽"   U227D            # ≻ SUCCEEDS OR EQUAL TO
 <Multi_key> <U227A> <asciitilde> <space>                   : "≾"   U227E            # ≺ PRECEDES OR EQUIVALENT TO
 <Multi_key> <U227B> <asciitilde> <space>                   : "≿"   U227F            # ≻ SUCCEEDS OR EQUIVALENT TO
-<Multi_key> <slash> <U227A>                                : "⊀"   U2280            # DOES NOT PRECEDE
-<Multi_key> <U227A> <slash>                                : "⊀"   U2280            # DOES NOT PRECEDE
-<Multi_key> <slash> <U227B>                                : "⊁"   U2281            # DOES NOT SUCCEED
-<Multi_key> <U227B> <slash>                                : "⊁"   U2281            # DOES NOT SUCCEED
-<Multi_key> <slash> <includedin>                           : "⊄"   U2284            # NOT A SUBSET OF
-<Multi_key> <includedin> <slash>                           : "⊄"   U2284            # NOT A SUBSET OF
-<Multi_key> <slash> <includes>                             : "⊅"   U2285            # NOT A SUPERSET OF
-<Multi_key> <includes> <slash>                             : "⊅"   U2285            # NOT A SUPERSET OF
+<Multi_key> <slash> <U227A> <space>                        : "⊀"   U2280            # DOES NOT PRECEDE
+<Multi_key> <U227A> <slash> <space>                        : "⊀"   U2280            # DOES NOT PRECEDE
+<Multi_key> <slash> <U227B> <space>                        : "⊁"   U2281            # DOES NOT SUCCEED
+<Multi_key> <U227B> <slash> <space>                        : "⊁"   U2281            # DOES NOT SUCCEED
+<Multi_key> <slash> <includedin> <space>                   : "⊄"   U2284            # NOT A SUBSET OF
+<Multi_key> <includedin> <slash> <space>                   : "⊄"   U2284            # NOT A SUBSET OF
+<Multi_key> <slash> <includes> <space>                     : "⊅"   U2285            # NOT A SUPERSET OF
+<Multi_key> <includes> <slash> <space>                     : "⊅"   U2285            # NOT A SUPERSET OF
 <Multi_key> <U2282> <underscore> <space>                   : "⊆"   U2286            # _ ⊂ SUBSET OF OR EQUAL TO
 <Multi_key> <U2283> <underscore> <space>                   : "⊇"   U2287            # _ ⊃ SUPERSET OF OR EQUAL TO
-<Multi_key> <includedin> <underscore> <slash>              : "⊈"   U2288            # NEITHER A SUBSET OF NOR EQUAL TO
-<Multi_key> <includes> <underscore> <slash>                : "⊉"   U2289            # NEITHER A SUPERSET OF NOR EQUAL TO
-<Multi_key> <includedin> <slash> <underscore>              : "⊊"   U228A            # SUBSET OF WITH NOT EQUAL TO
-<Multi_key> <includes> <slash> <underscore>                : "⊋"   U228B            # SUPERSET OF WITH NOT EQUAL TO
-<Multi_key> <U> <less> <minus>                             : "⊌"   U228C            # MULTISET
-<Multi_key> <less> <minus> <U>                             : "⊌"   U228C            # MULTISET
-<Multi_key> <U> <period>                                   : "⊍"   U228D            # MULTISET MULTIPLICATION
-<Multi_key> <period> <U>                                   : "⊍"   U228D            # MULTISET MULTIPLICATION
-<Multi_key> <U> <plus>                                     : "⊎"   U229E            # MULTISET UNION
-<Multi_key> <plus> <U>                                     : "⊎"   U229E            # MULTISET UNION
-<Multi_key> <circle> <plus>                                : "⊕"   U2295            # CIRCLED PLUS
-<Multi_key> <plus> <circle>                                : "⊕"   U2295            # CIRCLED PLUS
-<Multi_key> <circle> <minus>                               : "⊖"   U2296            # CIRCLED MINUS
-<Multi_key> <minus> <circle>                               : "⊖"   U2296            # CIRCLED MINUS
-<Multi_key> <circle> <multiply>                            : "⊗"   U2297            # CIRCLED TIMES
-<Multi_key> <multiply> <circle>                            : "⊗"   U2297            # CIRCLED TIMES
-<Multi_key> <circle> <U2215>                               : "⊘"   U2298            # CIRCLED DIVISION SLASH
-<Multi_key> <U2215> <circle>                               : "⊘"   U2298            # CIRCLED DIVISION SLASH
-<Multi_key> <circle> <U22C5>                               : "⊙ "  U2299            # CIRCLED DOT
-<Multi_key> <U22C5> <circle>                               : "⊙ "  U2299            # CIRCLED DOT
-<Multi_key> <circle> <jot>                                 : "⊚"   U229A            # CIRCLED JOT
-<Multi_key> <jot> <circle>                                 : "⊚"   U229A            # CIRCLED JOT
-<Multi_key> <circle> <asterisk>                            : "⊛"   U229B            # CIRCLED ASTERICKS
-<Multi_key> <asterisk> <circle>                            : "⊛"   U229B            # CIRCLED ASTERICKS
-<Multi_key> <circle> <equal>                               : "⊜"   U229C            # CIRCLED EQUALS
-<Multi_key> <equal> <circle>                               : "⊜"   U229C            # CIRCLED EQUALS
-<Multi_key> <circle> <figdash>                             : "⊝"   U229D            # CIRCLED DASH
-<Multi_key> <figdash> <circle>                             : "⊝"   U229D            # CIRCLED DASH
-<Multi_key> <25A1> <plus>                                  : "⊞"   U229E            # □ SQUARED PLUS
-<Multi_key> <plus> <25A1>                                  : "⊞"   U229E            # □ SQUARED PLUS
-<Multi_key> <25A1> <minus>                                 : "⊟"   U229F            # □ SQUARED MINUS
-<Multi_key> <minus> <25A1>                                 : "⊟"   U229F            # □ SQUARED MINUS
-<Multi_key> <25A1> <multiply>                              : "⊠"   U22A0            # □ SQUARED TIMES
-<Multi_key> <multiply> <25A1>                              : "⊠"   U22A0            # □ SQUARED TIMES
-<Multi_key> <U25A1> <U22C5>                                : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
-<Multi_key> <U22C5> <U25A1>                                : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
-<Multi_key> <U25A1> <period>                               : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
-<Multi_key> <period> <U25A1>                               : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
-<Multi_key> <bar> <minus>                                  : "⊦"   U22A6            # ASSERTION
-<Multi_key> <bar> <equals>                                 : "⊧"   U22A7            # MODELS
-<Multi_key> <bar> <underscore> <underscore>                : "⊨"   U22A8            # TRUE
-<Multi_key> <bar> <righttack>                              : "⊩"   U22A9            # FORCES
+<Multi_key> <includedin> <underscore> <slash> <space>      : "⊈"   U2288            # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <includes> <underscore> <slash> <space>        : "⊉"   U2289            # NEITHER A SUPERSET OF NOR EQUAL TO
+<Multi_key> <includedin> <slash> <underscore> <space>      : "⊊"   U228A            # SUBSET OF WITH NOT EQUAL TO
+<Multi_key> <includes> <slash> <underscore> <space>        : "⊋"   U228B            # SUPERSET OF WITH NOT EQUAL TO
+<Multi_key> <U> <less> <minus> <space>                     : "⊌"   U228C            # MULTISET
+<Multi_key> <less> <minus> <U> <space>                     : "⊌"   U228C            # MULTISET
+<Multi_key> <U> <period> <space>                           : "⊍"   U228D            # MULTISET MULTIPLICATION
+<Multi_key> <period> <U> <space>                           : "⊍"   U228D            # MULTISET MULTIPLICATION
+<Multi_key> <U> <plus> <space>                             : "⊎"   U229E            # MULTISET UNION
+<Multi_key> <plus> <U> <space>                             : "⊎"   U229E            # MULTISET UNION
+<Multi_key> <circle> <plus> <space>                        : "⊕"   U2295            # CIRCLED PLUS
+<Multi_key> <plus> <circle> <space>                        : "⊕"   U2295            # CIRCLED PLUS
+<Multi_key> <circle> <minus> <space>                       : "⊖"   U2296            # CIRCLED MINUS
+<Multi_key> <minus> <circle> <space>                       : "⊖"   U2296            # CIRCLED MINUS
+<Multi_key> <circle> <multiply> <space>                    : "⊗"   U2297            # CIRCLED TIMES
+<Multi_key> <multiply> <circle> <space>                    : "⊗"   U2297            # CIRCLED TIMES
+<Multi_key> <circle> <U2215> <space>                       : "⊘"   U2298            # CIRCLED DIVISION SLASH
+<Multi_key> <U2215> <circle> <space>                       : "⊘"   U2298            # CIRCLED DIVISION SLASH
+<Multi_key> <circle> <U22C5> <space>                       : "⊙ "  U2299            # CIRCLED DOT
+<Multi_key> <U22C5> <circle> <space>                       : "⊙ "  U2299            # CIRCLED DOT
+<Multi_key> <circle> <jot> <space>                         : "⊚"   U229A            # CIRCLED JOT
+<Multi_key> <jot> <circle> <space>                         : "⊚"   U229A            # CIRCLED JOT
+<Multi_key> <circle> <asterisk> <space>                    : "⊛"   U229B            # CIRCLED ASTERICKS
+<Multi_key> <asterisk> <circle> <space>                    : "⊛"   U229B            # CIRCLED ASTERICKS
+<Multi_key> <circle> <equal> <space>                       : "⊜"   U229C            # CIRCLED EQUALS
+<Multi_key> <equal> <circle> <space>                       : "⊜"   U229C            # CIRCLED EQUALS
+<Multi_key> <circle> <figdash> <space>                     : "⊝"   U229D            # CIRCLED DASH
+<Multi_key> <figdash> <circle> <space>                     : "⊝"   U229D            # CIRCLED DASH
+<Multi_key> <U25A1> <plus> <space>                         : "⊞"   U229E            # □ SQUARED PLUS
+<Multi_key> <plus> <U25A1> <space>                         : "⊞"   U229E            # □ SQUARED PLUS
+<Multi_key> <U25A1> <minus> <space>                        : "⊟"   U229F            # □ SQUARED MINUS
+<Multi_key> <minus> <U25A1> <space>                        : "⊟"   U229F            # □ SQUARED MINUS
+<Multi_key> <U25A1> <multiply> <space>                     : "⊠"   U22A0            # □ SQUARED TIMES
+<Multi_key> <multiply> <U25A1> <space>                     : "⊠"   U22A0            # □ SQUARED TIMES
+<Multi_key> <U25A1> <U22C5> <space>                        : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
+<Multi_key> <U22C5> <U25A1> <space>                        : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
+<Multi_key> <U25A1> <period> <space>                       : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
+<Multi_key> <period> <U25A1> <space>                       : "⊡"   U22A1            # □  ⋅ SQUARED DOT OPERATOR
+<Multi_key> <bar> <minus> <space>                          : "⊦"   U22A6            # ASSERTION
+<Multi_key> <bar> <equals> <space>                         : "⊧"   U22A7            # MODELS
+<Multi_key> <bar> <underscore> <underscore> <space>        : "⊨"   U22A8            # TRUE
+<Multi_key> <bar> <righttack> <space>                      : "⊩"   U22A9            # FORCES
 <Multi_key> <bar> <bar> <righttack> <space>                : "⊪"   U22AA            # TRIPLE VERTICAL BAR RIGHT TURNSTILE
 <Multi_key> <bar> <bar> <underscore> <underscore> <space>  : "⊫"   U22AB            # DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
-<Multi_key> <righttack> <slash>                            : "⊬"   U22AC            # DOES NOT PROVE
-<Multi_key> <slash> <righttack>                            : "⊬"   U22AC            # DOES NOT PROVE
-<Multi_key> <bar> <bar> <righttack> <slash>                : "⊭"   U22AD            # NOT TRUE
-<Multi_key> <bar> <righttack> <slash>                      : "⊮"   U22AE            # DOES NOT FORCE
-<Multi_key> <bar> <bar> <underscore> <underscore> <slash>  : "⊯"   U22AF            # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
-<Multi_key> <U22B2> <slash>                                : "⋪"   U22EA            # NOT NORMAL SUBGROUP OF
-<Multi_key> <slash> <U22B2>                                : "⋪"   U22EA            # NOT NORMAL SUBGROUP OF
-<Multi_key> <U22B3> <slash>                                : "⋫"   U22EB            # DOES NOT CONTAIN AS NORMAL SUBGROUP
-<Multi_key> <slash> <U22B3>                                : "⋫"   U22EB            # DOES NOT CONTAIN AS NORMAL SUBGROUP
-<Multi_key> <U22B2> <underscore> <slash>                   : "⋬"   U22EC            # NOT NORMAL SUBGROUP OF OR EQUAL TO
-<Multi_key> <U22B3> <underscore> <slash>                   : "⋭"   U22ED            # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
-<Multi_key> <dead_hook> <asciitilde> <underscore>          : "⋍"   U22CD            # REVERSED TILDE EQUALS
-<Multi_key> <period> <less>                                : "⋖"   U22D6            # LESS-THAN WITH DOT
-<Multi_key> <less> <period>                                : "⋖"   U22D6            # LESS-THAN WITH DOT
-<Multi_key> <period> <greater>                             : "⋗"   U22D7            # GREATER-THAN WITH DOT
-<Multi_key> <greater> <period>                             : "⋗"   U22D7            # GREATER-THAN WITH DOT
-<Multi_key> <less> <less> <less>                           : "⋘"   U22D8            # VERY MUCH LESS-THAN
-<Multi_key> <greater> <greater> <greater>                  : "⋙"   U22D9            # VERY MUCH GREATER-THAN
-<Multi_key> <less> <underscore> <greater>                  : "⋚"   U22DA            # LESS-THAN EQUAL TO OR GREATER-THAN
-<Multi_key> <greater> <underscore> <less>                  : "⋛"   U22DB            # GREATER-THAN EQUAL TO OR LESS-THAN
-<Multi_key> <underscore> <less>                            : "⋜"   U22DC            # EQUAL TO OR LESS-THAN
+<Multi_key> <righttack> <slash> <space>                    : "⊬"   U22AC            # DOES NOT PROVE
+<Multi_key> <slash> <righttack> <space>                    : "⊬"   U22AC            # DOES NOT PROVE
+<Multi_key> <bar> <bar> <righttack> <slash> <space>        : "⊭"   U22AD            # NOT TRUE
+<Multi_key> <bar> <righttack> <slash> <space>              : "⊮"   U22AE            # DOES NOT FORCE
+<Multi_key> <bar> <bar> <underscore> <underscore> <slash> <space>  : "⊯"   U22AF            # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
+<Multi_key> <U22B2> <slash> <space>                        : "⋪"   U22EA            # NOT NORMAL SUBGROUP OF
+<Multi_key> <slash> <U22B2> <space>                        : "⋪"   U22EA            # NOT NORMAL SUBGROUP OF
+<Multi_key> <U22B3> <slash> <space>                        : "⋫"   U22EB            # DOES NOT CONTAIN AS NORMAL SUBGROUP
+<Multi_key> <slash> <U22B3> <space>                        : "⋫"   U22EB            # DOES NOT CONTAIN AS NORMAL SUBGROUP
+<Multi_key> <U22B2> <underscore> <slash> <space>           : "⋬"   U22EC            # NOT NORMAL SUBGROUP OF OR EQUAL TO
+<Multi_key> <U22B3> <underscore> <slash> <space>           : "⋭"   U22ED            # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
+<Multi_key> <dead_hook> <asciitilde> <underscore> <space>  : "⋍"   U22CD            # REVERSED TILDE EQUALS
+<Multi_key> <period> <less> <space>                        : "⋖"   U22D6            # LESS-THAN WITH DOT
+<Multi_key> <less> <period> <space>                        : "⋖"   U22D6            # LESS-THAN WITH DOT
+<Multi_key> <period> <greater> <space>                     : "⋗"   U22D7            # GREATER-THAN WITH DOT
+<Multi_key> <greater> <period> <space>                     : "⋗"   U22D7            # GREATER-THAN WITH DOT
+<Multi_key> <less> <less> <less> <space>                   : "⋘"   U22D8            # VERY MUCH LESS-THAN
+<Multi_key> <greater> <greater> <greater> <space>          : "⋙"   U22D9            # VERY MUCH GREATER-THAN
+<Multi_key> <less> <underscore> <greater> <space>          : "⋚"   U22DA            # LESS-THAN EQUAL TO OR GREATER-THAN
+<Multi_key> <greater> <underscore> <less> <space>          : "⋛"   U22DB            # GREATER-THAN EQUAL TO OR LESS-THAN
+<Multi_key> <underscore> <less> <space>                    : "⋜"   U22DC            # EQUAL TO OR LESS-THAN
 
 # Other punctuation
 <Multi_key> <less> <minus> <space>                         : "←"   U2190            # LEFTWARDS ARROW
 <Multi_key> <asciicircum> <bar> <space>                    : "↑"   U2191            # UPWARDS ARROW
 <Multi_key> <minus> <greater> <space>                      : "→"   U2192            # RIGHTWARDS ARROW
-<Multi_key> <minus> <caron> <bar>                          : "↓"   U2193            # DOWNWARDS ARROW
-<Multi_key> <less> <minus> <slash>                         : "↚"   U219A            # LEFTWARDS ARROW WITH STROKE
-<Multi_key> <minus> <greater> <slash>                      : "↛"   U219B            # RIGHTWARDS ARROW WITH STROKE
-<Multi_key> <equal> <greater>                              : "⇒"   U21D2            # RIGHTWARDS DOUBLE ARROW
-<Multi_key> <underscore> <underscore> <greater>            : "⇒"   U21D2            # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <minus> <caron> <bar> <space>                  : "↓"   U2193            # DOWNWARDS ARROW
+<Multi_key> <less> <minus> <slash> <space>                 : "↚"   U219A            # LEFTWARDS ARROW WITH STROKE
+<Multi_key> <minus> <greater> <slash> <space>              : "↛"   U219B            # RIGHTWARDS ARROW WITH STROKE
+<Multi_key> <equal> <greater> <space>                      : "⇒"   U21D2            # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <underscore> <underscore> <greater> <space>    : "⇒"   U21D2            # RIGHTWARDS DOUBLE ARROW
 <dead_hook> <U2308>                                        : "⌊"  U230A            # ⌈ LEFT FLOOR
 <dead_hook> <U2309>                                        : "⌋"  U230B            # ⌉ RIGHT FLOOR
 <dead_hook> <U231C>                                        : "⌞"   U230E            # ⌜ LEFT BOTTOM CORNER
 <dead_hook> <U231D>                                        : "⌟"   U230F            # ⌝ RIGHT BOTTOM CORNER
-<Multi_key> <bracketleft> <bar>                            : "⟦"   U27E6            # LEFT DOUBLE BRACKET
-<Multi_key> <bracketright> <bar>                           : "⟧"   U27E7            # RIGHT DOUBLE BRACKET
+<Multi_key> <bracketleft> <bar> <space>                    : "⟦"   U27E6            # LEFT DOUBLE BRACKET
+<Multi_key> <bracketright> <bar> <space>                   : "⟧"   U27E7            # RIGHT DOUBLE BRACKET
 <dead_hook> <question>                                     : "¿"   questiondown     # INVERTED QUESTION MARK
 <dead_hook> <exclam>                                       : "¡"   exclamdown       # INVERTED EXCLAMATION MARK
 
