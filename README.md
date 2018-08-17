@@ -11,17 +11,17 @@ This keyboard uses the default US keyboard as its base layout; Any key that you 
 are created with an third level shift and a compose key (Right alt and Right control by default).
 
 Here are the following additions:
-  - Type any combination of the following accents: acute, breve, caron, cedilla, circumflex, diaeresis, grave, macron, tilde
-    e.g. ẍ, ṕ, ṻ and even ǖ
-  - Type all greek letters
-    e.g. υ, α, β
-  - Type special symbols
-    e.g. ¥, ¶, µ, ¿, °
-  - Type all the math symbols you probably need (create a pull request if I am missing any)
-    e.g. ≡, ∀, ≋, ≩, ⊊, ∰, ¾
-  - Type superscripts and subscripts
-    e.g. ⁴, ⁺, ₀ 
-  - Type letters surrounded by a circle
+  - Type any combination of the following accents: acute, breve, caron, cedilla, circumflex, diaeresis, grave, macron, tilde  
+    e.g. ẍ, ṕ, ṻ and even ǖ   
+  - Type all greek letters  
+    e.g. υ, α, β  
+  - Type special symbols  
+    e.g. ¥, ¶, µ, ¿, °  
+  - Type all the math symbols you probably need (create a pull request if I am missing any)  
+    e.g. ≡, ∀, ≋, ≩, ⊊, ∰, ¾  
+  - Type superscripts and subscripts  
+    e.g. ⁴, ⁺, ₀   
+  - Type letters surrounded by a circle  
     e.g. ⓔ
 
 How to use: 
@@ -36,22 +36,20 @@ dead_inverted: Inverts the keys (inverts up and down but not left and right)
 ```
 <dead_inverted> + <A> → ∀
 ```
-dead_miscellaneous: Not really important but just maps several keys that can't really be composed. Currently only containing music keys.
-dead_superscript: For superscript letters
-dead_subscript: For subscript letters
-dead_currency: Maps currency symbols
+dead_miscellaneous: Not really important but just maps several keys that can't really be composed. Currently only containing music keys.  
+dead_superscript: For superscript letters  
+dead_subscript: For subscript letters  
+dead_currency: Maps currency symbols  
 ```
 <dead_currency> + <y> → ¥ (yen symbol)
 <dead_currency> + <c> → ¢ (cent symbol)
 ```
-dead_greek: For greek letters
+dead_greek: For greek letters. Unfortunately, because there are letters in greek than one letter in greek that starts with the same letter (e.g. tau and theta)
+some greek keys are not mapped in a position that is favourable
+
 ```
 <dead_greek> + <a> → α (alpha)
 <dead_greek> + <G> → Γ (capital gamma, γ)
-```
-For dead_greek keys only: You may notice that there are more than one letter in greek that starts with the same letter: e.g. tau and theta. This is unfortunate, but you 
-may have to search though the dead_greek keys to find which one you want.
-```
 <dead_greek> + <t> = τ (tau)
 <dead_greek> + <j> = θ (theta)
 ```
