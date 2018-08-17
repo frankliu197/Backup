@@ -29,19 +29,37 @@ How to use:
 You certainly do not need to remember this to use it, but it is a nice reference. Here are the images of the keyboard in the third-level shift and fourth level shift:
 
 
-You will notice these keyboard will contain almost no keys that I have specified above. I have mapped most of those keys through dead_keys (mapped in gray above) and through the compose key, so it would be easy to remember how to type them in.
-:
-The following dead_keys which are remapped from its original purpose: 
-dead_hook → dead_inverted: Inverts the keys (inverts up and down but not left and right)
-dead_horn → dead_other: For miscellaneous symbols
-dead_abovedot → dead_superscript: superscripts
-dead_belowdot → dead_subscript: subscripts
+You will notice these keyboard will contain almost no keys that I have specified above. I have mapped most of those keys through dead keys (mapped in gray above) and through the compose key, so it would be easy to remember how to type them in.
 
-INSTRUCTIONS:
+DEAD KEYS:
+dead_inverted: Inverts the keys (inverts up and down but not left and right) 
+```
+<dead_inverted> + <A> → ∀
+```
+dead_miscellaneous: Not really important but just maps several keys that can't really be composed. Currently only containing music keys.
+dead_superscript: For superscript letters
+dead_subscript: For subscript letters
+dead_currency: Maps currency symbols
+```
+<dead_currency> + <y> → ¥ (yen symbol)
+<dead_currency> + <c> → ¢ (cent symbol)
+```
+dead_greek: For greek letters
+```
+<dead_greek> + <a> → α (alpha)
+<dead_greek> + <G> → Γ (capital gamma, γ)
+```
+For dead_greek keys only: You may notice that there are more than one letter in greek that starts with the same letter: e.g. tau and theta. This is unfortunate, but you 
+may have to search though the dead_greek keys to find which one you want.
+```
+<dead_greek> + <t> = τ (tau)
+<dead_greek> + <j> = θ (theta)
+```
+COMPOSE KEY:
 - The functionality of the Compose Key is now very specific. The compose key will only combine keys together if they can form a key graphically.
 e.g. <compose> <equal> <underscore> →  ≡      and  <compose> <less> <underscore> → ≤ 
 It will no longer compose keys that logically work together:
-e.g. <compose> <equals> <less> ↛  ≤ 
+e.g. <compose> <equals> <less> ↛  ≤           or compose + ^ + 1 ↛ ¹
 - The key order you press is very important. The order of keys you must press for your character must start from left to right, and top to bottom.
 e.g. <compose> <minus> <plus> →   ∓             and  <compose> <plus> <minus> → ±
 <compose> <less> <minus> →   ←
