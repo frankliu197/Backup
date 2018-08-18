@@ -34,59 +34,59 @@ You will notice these keyboard will contain almost no keys that I have specified
 DEAD KEYS:  
 Dead keys are similar to another shift key, but are only for a certain purpose:
 - dead_inverted: Inverts the keys (inverts up and down but not left and right)  
-  e.g.  dead_inverted + A → ∀  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.  dead_inverted + A → ∀  
 - dead_miscellaneous: Not really important but just maps several keys that can't really be composed. Currently only containing music keys.  
-  e.g. dead_miscellaneous + e → ♪ (eighth note)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_miscellaneous + e → ♪ (eighth note)  
 - dead_superscript: For superscript letters  
-  e.g. dead_superscript + 1 → ¹  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_superscript + 1 → ¹  
 - dead_subscript: For subscript letters  
-  e.g. dead_subscript + 1 → ₁  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_subscript + 1 → ₁  
 - dead_currency: Maps currency symbols    
-  e.g. dead_currency + y → ¥ (yen symbol)  
-       dead_currency + c → ¢ (cent symbol)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_currency + y → ¥ (yen symbol)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead_currency + c → ¢ (cent symbol)  
 - dead_greek: For greek letters. Unfortunately, because there are letters in greek than one letter in greek that starts with the same letter (e.g. tau and theta)
 some greek keys are not mapped in a position that is favourable.  
-e.g. dead_greek + a → α (alpha) 
-     dead_greek + G → Γ (capital gamma, γ)  
-     dead_greek + t = τ (tau) 
-     dead_greek + j = θ (theta)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_greek + a → α (alpha) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead_greek + G → Γ (capital gamma, γ)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead_greek + t = τ (tau) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead_greek + j = θ (theta)   
 
 COMPOSE KEY:  
 Compose keys will combine a combination of keys graphically to form another character.   
-e.g. compose + equal + underscore + space →  ≡     
-     compose + less + underscore + space → ≤    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + equal + underscore + space →  ≡     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + less + underscore + space → ≤    
 On the default Ubuntu, compose keys also compose keys that logically work together, but this is no longer true   
-e.g. compose + equal + less + space ↛  ≤    
-     compose + ^ + 1 + space ↛ ¹    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + equal + less + space ↛  ≤    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + ^ + 1 + space ↛ ¹    
 The key order you press is very important. The order of keys you must press for your character must start from left to right, and top to bottom.  
-e.g. compose + minus + plus + space → ∓   
-     compose + plus + minus + space → ±  
-     compose + macron + diaeresis + u → ṻ   
-     compose + diaeresis + macron + u → ǖ  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + minus + plus + space → ∓   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + plus + minus + space → ±  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + macron + diaeresis + u → ṻ   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + diaeresis + macron + u → ǖ  
 Because the key order of some characters is slightly ambigious, there are multiple key combinations to make the same symbol. In these cases, as long as you don't stray too far from the rules outlined here, you should have no problem writing your symbol of desire.    
-e.g. compose + bar + slash + space = compose + slash + bar + space → ∤  
-     compose + equal + underscore + space = compose + underscore + equal + space ↛ ≡  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + bar + slash + space = compose + slash + bar + space → ∤  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + equal + underscore + space = compose + underscore + equal + space ↛ ≡  
 The key order of slash is slight special. Similar to the dead_key, the slash will only slash out the next key. If you want to slash out the whole combination, you must press slash last.  
-e.g. compose + tilde + slash + equals + space → ≆  
-     compose + tilde + equals + slash + space → ≇  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + tilde + slash + equals + space → ≆  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + tilde + equals + slash + space → ≇  
 When typing in any non-latin characters with the compose key (like punctuation or math operators), you will need to finish your combination with the space key. This is to prevent longer compose key sequences from overriding the shorter ones
 such as ≤ and ≰ (the second being just a slash more).  
 Finally, you may notice that there are two slashes, the normal slash (/) and the division_slash (∕, Right Alt + .). Use compose with division slash for all division related keys, and use the slash otherwise.  
-e.g. compose + 1 + division_slash + 3 + space → ⅓     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + 1 + division_slash + 3 + space → ⅓     
 
 
 WHEN USING DEAD KEYS IN COMBINATION WITH COMPOSE KEYS:  
 Note that the dead_key only modifies the next key. Thus the dead_inverted in the combination below:   
-  compose + dead_inverted + ? + !   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + dead_inverted + ? + !   
 will only invert the question mark, and not the exclamation mark. However, you could use   
-  compose + dead_inverted + ? + dead_inverted + !   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + dead_inverted + ? + dead_inverted + !   
 to invert both keys.  
 Always start with the compose key if you are planning to do a composition of keys. It does not matter whether your key combination contains dead keys or not.  
 
 OTHER FUNCTIONS:
-- For convienence purposes, the compose key will print out a long phrase when used with only letter first. These combinations created to type phrases you type often faster.  
-e.g. compose + g + p → git push origin master      (g for git and p for push)  
-     compose + j + p → System.out.println(         (j for java and p for print)  
+For convienence purposes, the compose key will print out a long phrase when used with only letter first. These combinations created to type phrases you type often faster.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose + g + p → git push origin master      (g for git and p for push)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + j + p → System.out.println(         (j for java and p for print)  
 These key combinations are easily editable in the Compose file.  
 
 Visit my tutorial here to learn how to edit your custom keyboard in more detail.  
@@ -95,7 +95,7 @@ Visit my tutorial here to learn how to edit your custom keyboard in more detail.
 ## Installation
 
 If you want to learn how to set up your own keyboard, click here.  
-Otherwise follow the instructions to set up the keyboard with default configurations.  
+Otherwise follow the instructions below to set up the keyboard with default configurations.  
 WARNING: If you created/edited the files: /usr/share/X11/xkb/symbols/us or ~/.XCompose, blindly following the steps below will delete all your custom configurations. You will need to tweak the steps below so it would be compatable with your current keyboard.  
 
 1. Download the keyboard source code into your computer.
