@@ -24,7 +24,10 @@ Here are the following additions:
   - Type letters surrounded by a circle  
     e.g. ⓔ
 
-How to use: 
+
+Usage and Installation instructions are below:
+
+## Usage: 
 
 You certainly do not need to remember this to use it, but it is a nice reference. Here are the images of the keyboard in the third-level shift and fourth level shift:
 
@@ -167,5 +170,3 @@ setxkbmap
 sudo systemctl restart lightdm
 ```
 6. The custom-us keyboard should pop up as one of the keyboards in Settings→ Keyboards. Add the keyboard layout to your layout list and enjoy!
-
-## Usage
