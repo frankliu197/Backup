@@ -82,8 +82,7 @@ WHEN USING DEAD KEYS IN COMBINATION WITH COMPOSE KEYS:
 Note that the dead_key only modifies the next key. Thus the dead_inverted in the combination below:   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + dead_inverted + ? + !   
 will only invert the question mark, and not the exclamation mark. However, you could use   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + dead_inverted + ? + dead_inverted + !   
-to invert both keys.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose + dead_inverted + ? + dead_inverted + !   to invert both keys.  
 Always start with the compose key if you are planning to do a composition of keys. It does not matter whether your key combination contains dead keys or not.  
 
 OTHER FUNCTIONS:
@@ -164,10 +163,17 @@ export GTK_IM_MODULE=uim
 export QT_IM_MODULE=uim
 ```
 
-6. Restart your keyboard service:
+6. Reset/restart two services:
+Reset your xkb service
 ```
 setxkbmap
 ```
-And then logout and log back in.
+and use one of the two commands below to restart your X sessions:
+```
+sudo systemctl restart lightdm
+sudo service lightdm restart
+sudo pkill X
+```
+If none of these commands work, you may not be able to install this keyboard. However, try restarting your computer and continue to the next step of your installation process.
 
 7. And you are done installing! The custom-us keyboard should now pop up as one of the keyboards in Settings→ Keyboards. Add the keyboard layout to your layout list to use it!

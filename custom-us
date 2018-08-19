@@ -11,16 +11,14 @@
 # gksudo --bash custom-us --start
 # gksudo --bash custom-us --stop
 #
-# You may have to change the numbers in the file:
-# /etc/X11/Xsession.d/##sogoupinyin
-# as written twice below. These two numbers need to be changed so that 
-# they match an existing file on your system 
-#
-# 
-#
 # The script does its job by: 
 # Commenting lines out of startup scripts so the fcitx does not start when you want to use custom keyboard, and fcitx starts when you don't want to use your custom keyboard
 #
+# NOTE: If this script returns an error, you may have to change the command in the variable LOGOUT. The current command
+# does not guarentee that you can log out of your computer.
+# If required, you can also change it into "shutdown -now"
+# 
+LOGOUT=sudo systemctl restart lightdm
 
 # Ensures root permissions
 if [ "$EUID" -ne 0 ]
@@ -30,12 +28,12 @@ fi
 
 if [[ $@ == "--start" ]]; then
   # Prevents loadup of sogoupinyin and fcitx
-  sudo sed -i 's/export XMODIFIERS=@im=fcitx/#export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/72sogoupinyin
-  sudo systemctl restart lightdm
-elif [[ $@ == "--stop" ]]; then 
+  sudo sed -i 's/export XMODIFIERS=@im=fcitx/#export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/*sogoupinyin
+  elif [[ $@ == "--stop" ]]; then 
   # Allows loadup of sogoupinyin and fcitx
-  sudo sed -i 's/#export XMODIFIERS=@im=fcitx/export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/72sogoupinyin
-  sudo systemctl restart lightdm
+  sudo sed -i 's/#export XMODIFIERS=@im=fcitx/export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/*sogoupinyin
 fi
+
+eval $LOGOUT
 
 
