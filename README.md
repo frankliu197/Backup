@@ -164,9 +164,10 @@ export GTK_IM_MODULE=uim
 export QT_IM_MODULE=uim
 ```
 
-4. 5. Restart several services (Note: you will log out)
+6. Restart your keyboard service:
 ```
 setxkbmap
-sudo systemctl restart lightdm
 ```
-6. The custom-us keyboard should pop up as one of the keyboards in Settings→ Keyboards. Add the keyboard layout to your layout list and enjoy!
+And then logout and log back in.
+
+7. And you are done installing! The custom-us keyboard should now pop up as one of the keyboards in Settings→ Keyboards. Add the keyboard layout to your layout list to use it!
