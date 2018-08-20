@@ -40,7 +40,7 @@ You will notice these keyboard will contain almost no keys that I have specified
 
 **DEAD KEYS:**  
 Dead keys are similar to another modifier key (like shift), but are only for a certain purpose:
-- dead\_inverted (Right-Alt <span>+</span> -): Inverts the keys upside down, but not left and right  
+- dead\_inverted (Right-Alt <span font-weight="lighter">+</span> -): Inverts the keys upside down, but not left and right  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.  dead\_inverted + A → ∀  
 - dead\_miscellaneous (Right-Alt <span>+</span>  \_): Maps several keys that can't really be composed. Currently only containing music keys.  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_miscellaneous <span>+</span> e → ♪ (eighth note)
