@@ -59,25 +59,27 @@ some greek keys are not mapped in a position that is favourable.
 
 COMPOSE KEY:  
 Compose keys will combine a combination of keys graphically to form another character. Your default compose key is Right-Control/   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> equal <sub><sup>+</sup></sub> underscore <sub><sup>+</sup></sub> space →  ≡     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> less <sub><sup>+</sup></sub> underscore <sub><sup>+</sup></sub> space → ≤    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> = <sub><sup>+</sup></sub> _ <sub><sup>+</sup></sub> space →  ≡     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> < <sub><sup>+</sup></sub> _ <sub><sup>+</sup></sub> space → ≤    
 On the default Ubuntu, compose keys also compose keys that logically work together, but this is no longer true   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> equal <sub><sup>+</sup></sub> less <sub><sup>+</sup></sub> space ↛  ≤    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> = <sub><sup>+</sup></sub> < <sub><sup>+</sup></sub> space ↛  ≤    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> ^ <sub><sup>+</sup></sub> 1 <sub><sup>+</sup></sub> space ↛ ¹    
 The key order you press is very important. The order of keys you must press for your character must start from left to right, and top to bottom.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> minus <sub><sup>+</sup></sub> plus <sub><sup>+</sup></sub> space → ∓   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> plus <sub><sup>+</sup></sub> minus <sub><sup>+</sup></sub> space → ±  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> macron <sub><sup>+</sup></sub> diaeresis <sub><sup>+</sup></sub> u → ṻ   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> diaeresis <sub><sup>+</sup></sub> macron <sub><sup>+</sup></sub> u → ǖ  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> - <sub><sup>+</sup></sub> + <sub><sup>+</sup></sub> space → ∓   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> + <sub><sup>+</sup></sub> - <sub><sup>+</sup></sub> space → ±  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> ¯ <sub><sup>+</sup></sub> ¨ <sub><sup>+</sup></sub> u → ṻ   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> ¨ <sub><sup>+</sup></sub> ¯ <sub><sup>+</sup></sub> u → ǖ  
 Because the key order of some characters is slightly ambigious, there are multiple key combinations to make the same symbol. In these cases, as long as you don't stray too far from the rules outlined here, you should have no problem writing your symbol of desire.    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> bar <sub><sup>+</sup></sub> slash <sub><sup>+</sup></sub> space = compose <sub><sup>+</sup></sub> slash <sub><sup>+</sup></sub> bar <sub><sup>+</sup></sub> space → ∤  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> equal <sub><sup>+</sup></sub> underscore <sub><sup>+</sup></sub> space = compose <sub><sup>+</sup></sub> underscore <sub><sup>+</sup></sub> equal <sub><sup>+</sup></sub> space ↛ ≡  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> | <sub><sup>+</sup></sub> / <sub><sup>+</sup></sub> space → ∤
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> / <sub><sup>+</sup></sub> | <sub><sup>+</sup></sub> space → ∤  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> = <sub><sup>+</sup></sub> _ <sub><sup>+</sup></sub> space → ≡
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> _ <sub><sup>+</sup></sub> = <sub><sup>+</sup></sub> space → ≡  
 The key order of slash is slight special. Similar to the dead\_key, the slash will only slash out the next key. If you want to slash out the whole combination, you must press slash last.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> tilde <sub><sup>+</sup></sub> slash <sub><sup>+</sup></sub> equals <sub><sup>+</sup></sub> space → ≆  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> tilde <sub><sup>+</sup></sub> equals <sub><sup>+</sup></sub> slash <sub><sup>+</sup></sub> space → ≇  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> ~ <sub><sup>+</sup></sub> / <sub><sup>+</sup></sub> = <sub><sup>+</sup></sub> space → ≆  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose <sub><sup>+</sup></sub> ~ <sub><sup>+</sup></sub> = <sub><sup>+</sup></sub> / <sub><sup>+</sup></sub> space → ≇  
 When typing in any non-latin characters with the compose key (like punctuation or math operators), you will need to finish your combination with the space key. This is to prevent longer compose key sequences from overriding the shorter ones
 such as ≤ and ≰ (the second being just a slash more).  
-Finally, you may notice that there are two slashes, the normal slash (/) and the division\_slash (∕, Right Alt <sub><sup>+</sup></sub> .). Use compose with division slash for all division related keys, and use the slash otherwise.  
+Finally, you may notice that there are two slashes, the normal slash ( / ) and the division\_slash ( ∕, Right Alt <sub><sup>+</sup></sub> . ). Use compose with division slash for all division related keys, and use the slash otherwise.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. compose <sub><sup>+</sup></sub> 1 <sub><sup>+</sup></sub> division\_slash <sub><sup>+</sup></sub> 3 <sub><sup>+</sup></sub> space → ⅓     
 
 
