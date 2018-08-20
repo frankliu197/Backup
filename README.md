@@ -33,21 +33,21 @@ You certainly do not need to remember this to use it, but it is a nice reference
 
 **Third Level Shift (default: Right-Alt):**
 
-**Fourth Level Shift (default: Right-Alt + Shift):**
+**Fourth Level Shift (default: Right-Alt** <sub><sup>+</sup></sub> **Shift):**
 
 You will notice these keyboard will contain almost no keys that I have specified in the introduction. I have mapped most of those keys through dead keys (mapped in gray above) and through the compose key, so it would be easy to remember how to type them in.
 
 **DEAD KEYS:**  
 Dead keys are similar to another modifier key (like shift), but are only for a certain purpose:
-- dead\_inverted (Right-Alt + -): Inverts the keys upside down, but not left and right  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.  dead\_inverted + A → ∀  
-- dead\_miscellaneous (Right-Alt <span>+</span>  \_): Maps several keys that can't really be composed. Currently only containing music keys.  
+- dead\_inverted (Right-Alt <sub><sup>+</sup></sub> -): Inverts the keys upside down, but not left and right  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.  dead\_inverted <sub><sup>+</sup></sub> A → ∀  
+- dead\_miscellaneous (Right-Alt <sub><sup>+</sup></sub>  \_): Maps several keys that can't really be composed. Currently only containing music keys.  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_miscellaneous <sub><sup>+</sup></sub> e → ♪ (eighth note)
 - dead\_superscript (Right-Alt <sub><sup>+</sup></sub> \\): Changes the next letter into its superscript form  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_superscript <sub><sup>+</sup></sub> 1 → ¹  
 - dead\_subscript (Right-Alt <sub><sup>+</sup></sub> |): Changes the next letter into its subscript form
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_subscript <sub><sup>+</sup></sub> 1 → ₁  
-- dead\_currency (Right-Alt <sub><sup>+</sup></sub> <sub><sup>+</sup></sub>): Maps currency symbols    
+- dead\_currency (Right-Alt <sub><sup>+</sup></sub> +): Maps currency symbols    
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_currency <sub><sup>+</sup></sub> y → ¥ (yen symbol)  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_currency <sub><sup>+</sup></sub> c → ¢ (cent symbol)  
 - dead\_greek (Right-Alt <sub><sup>+</sup></sub> =): Maps greek letters. Because there are letters in greek than one letter in greek that starts with the same letter (e.g. tau and theta),
