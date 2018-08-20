@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="Markdown.css">
 ## Introduction
 
 This keyboard is designed for people who:
@@ -42,20 +42,21 @@ You will notice these keyboard will contain almost no keys that I have specified
 Dead keys are similar to another modifier key (like shift), but are only for a certain purpose:
 - dead\_inverted (Right-Alt <span>+</span> -): Inverts the keys upside down, but not left and right  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.  dead\_inverted + A → ∀  
-- dead\_miscellaneous (Right-Alt <span>+</span>  \_): Not really important but just maps several keys that can't really be composed. Currently only containing music keys.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_miscellaneous <span>+</span> e → ♪ (eighth note)  - dead_superscript (Right-Alt **<span>+</span>** =): For superscript letters  
+- dead\_miscellaneous (Right-Alt <span>+</span>  \_): Maps several keys that can't really be composed. Currently only containing music keys.  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_miscellaneous <span>+</span> e → ♪ (eighth note)
+- dead\_superscript (Right-Alt <span>+</span> =): For superscript letters  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_superscript <span>+</span> 1 → ¹  
 - dead\_subscript (Right-Alt <span>+</span> +): For subscript letters  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_subscript <span>+</span> 1 → ₁  
 - dead\_currency: Maps currency symbols    
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_currency <span>+</span> y → ¥ (yen symbol)  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_currency <span>+</span> c → ¢ (cent symbol)  
-- dead\_greek: For greek letters. Unfortunately, because there are letters in greek than one letter in greek that starts with the same letter (e.g. tau and theta)
+- dead\_greek: For greek letters. Because there are letters in greek than one letter in greek that starts with the same letter (e.g. tau and theta),
 some greek keys are not mapped in a position that is favourable.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead\_greek <span>+</span> a → α (alpha)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_greek <span>+</span> G → Γ (capital gamma, γ)    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_greek <span>+</span> t = τ (tau)   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_greek <span>+</span> j = θ (theta)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_greek <span>+</span> t → τ (tau)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dead\_greek <span>+</span> j → θ (theta)   
 
 COMPOSE KEY:  
 Compose keys will combine a combination of keys graphically to form another character.   
