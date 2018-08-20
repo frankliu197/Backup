@@ -5,10 +5,10 @@ This keyboard is designed for people who:
   - Want to type Math, Physics and Currency symbols
   - And would like to use the keyboard without changing their typing habits
 
-If any of them math what you are looking for, keep reading:
+If any of them match what you are looking for, keep reading:
 
 This keyboard uses the default US keyboard as its base layout; Any key that you press on the US keyboard remain the same key on this keyboard. All the additional fancy characters
-are created with an third level shift and a compose key (Right alt and Right control by default).
+are created with an third level shift (default: Right-Alt) and a compose key (default: Right-Control). 
 
 Here are the following additions:
   - Type any combination of the following accents: acute, breve, caron, cedilla, circumflex, diaeresis, grave, macron, tilde  
@@ -29,20 +29,19 @@ Usage and Installation instructions are below:
 
 ## Usage: 
 
-You certainly do not need to remember this to use it, but it is a nice reference. Here are the images of the keyboard in the third-level shift and fourth level shift:
+You certainly do not need to remember this to use it, but it is a nice reference. Here are the images of the keyboard in the third-level shift (default: Right Alt)  and fourth level shift (default: Right Alt + Shift):
 
 
 You will notice these keyboard will contain almost no keys that I have specified in the introduction. I have mapped most of those keys through dead keys (mapped in gray above) and through the compose key, so it would be easy to remember how to type them in.
 
 DEAD KEYS:  
-Dead keys are similar to another shift key, but are only for a certain purpose:
-- dead_inverted: Inverts the keys (inverts up and down but not left and right)  
+Dead keys are similar to another modifier key (like shift), but are only for a certain purpose:
+- **dead\_inverted (Right-Alt \+ -)**: Inverts the keys upside down, but not left and right  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.  dead_inverted + A → ∀  
-- dead_miscellaneous: Not really important but just maps several keys that can't really be composed. Currently only containing music keys.  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_miscellaneous + e → ♪ (eighth note)  
-- dead_superscript: For superscript letters  
+- dead_miscellaneous (Right-Alt +  \_): Not really important but just maps several keys that can't really be composed. Currently only containing music keys.  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_miscellaneous + e → ♪ (eighth note)  - dead_superscript (Right-Alt **+** =): For superscript letters  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_superscript + 1 → ¹  
-- dead_subscript: For subscript letters  
+- dead_subscript (Right-Alt + +): For subscript letters  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_subscript + 1 → ₁  
 - dead_currency: Maps currency symbols    
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. dead_currency + y → ¥ (yen symbol)  
