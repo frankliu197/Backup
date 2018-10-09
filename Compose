@@ -2,13 +2,16 @@
 # And other personal key combinations that you don't think should belong in the main file
 
 # Symbol Combinations For Typing (These are just examples)
-<Multi_key> <j> <p>                                        : "System.out.println("
-<Multi_key> <g> <c>                                        : "git commit -m \""
-<Multi_key> <S> <g>                                        : "sudo cp /usr/sbin/custom-us ~/Backup/"
-<Multi_key> <g> <A>                                        : "git add -A"
-<Multi_key> <g> <p>                                        : "git push origin master"
-<Multi_key> <g> <i>                                        : "git init"
-<Multi_key> <b> <t>                                        : "export TESTVAR="
-<Multi_key> <s> <e>                                        : "sudo env \"PATH=$PATH\" "
-<Multi_key> <u> <f>                                        : "sudo mkfs.vfat "
+<Multi_key> <j> <p> <space>                                : "System.out.println("
+<Multi_key> <g> <c> <space>                                : "git commit -m \""
+<Multi_key> <g> <A> <space>                                : "git add -A"
+<Multi_key> <g> <p> <space>                                : "git push origin master"
+<Multi_key> <g> <i> <space>                                : "git init"
+<Multi_key> <b> <t> <space>                                : "export TESTVAR="
+<Multi_key> <s> <e> <space>                                : "sudo env \"PATH=$PATH\" "
+<Multi_key> <u> <f> <space>                                : "sudo mkfs.vfat "
+<Multi_key> <m> <W> <space>                                : "sudo mount /dev/sda3 /mnt"
+<Multi_key> <m> <r> <W> <space>                            : "sudo mount -r /dev/sda3 /mnt"
+<Multi_key> <c> <W> <h> <space>                            : "cd /mnt/Users/frankliu197/"
+<Multi_key> <m> <u> <space>                                : "sudo mount /dev/sdb /mnt"
 

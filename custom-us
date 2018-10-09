@@ -18,8 +18,9 @@
 # does not guarentee that you can log out of your computer.
 # If required, you can also change it into "shutdown -now"
 # 
-LOGOUT=sudo systemctl restart lightdm
-
+LOGOUT="sudo systemctl restart lightdm"
+LINE="export XMODIFIERS=@im=fcitx" #line to change
+FILE=/etc/X11/Xsession.d/*sogoupinyin #file location
 # Ensures root permissions
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
@@ -28,10 +29,16 @@ fi
 
 if [[ $@ == "--start" ]]; then
   # Prevents loadup of sogoupinyin and fcitx
-  sudo sed -i 's/export XMODIFIERS=@im=fcitx/#export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/*sogoupinyin
-  elif [[ $@ == "--stop" ]]; then 
+  
+  #checks if --start has already been activated
+  if ! grep "#$LINE" $FILE; then
+    #Comments a line out to prevent sogou pinyin startup
+    sudo sed -i "s/$LINE/#$LINE/" $FILE
+  fi
+  
+elif [[ $@ == "--stop" ]]; then 
   # Allows loadup of sogoupinyin and fcitx
-  sudo sed -i 's/#export XMODIFIERS=@im=fcitx/export XMODIFIERS=@im=fcitx/' /etc/X11/Xsession.d/*sogoupinyin
+  sudo sed -i "s/#$LINE/$LINE/" $FILE
 fi
 
 eval $LOGOUT
