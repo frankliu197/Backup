@@ -2,6 +2,7 @@
 # And other personal key combinations that you don't think should belong in the main file
 
 # Symbol Combinations For Typing (These are just examples)
+# You will need to change the device location e.g. (dev/sda) accordingly
 <Multi_key> <j> <p> <space>                                : "System.out.println("
 <Multi_key> <g> <c> <space>                                : "git commit -m \""
 <Multi_key> <g> <A> <space>                                : "git add -A"
@@ -9,9 +10,11 @@
 <Multi_key> <g> <i> <space>                                : "git init"
 <Multi_key> <b> <t> <space>                                : "export TESTVAR="
 <Multi_key> <s> <e> <space>                                : "sudo env \"PATH=$PATH\" "
-<Multi_key> <u> <f> <space>                                : "sudo mkfs.vfat "
-<Multi_key> <m> <W> <space>                                : "sudo mount /dev/sda3 /mnt"
-<Multi_key> <m> <r> <W> <space>                            : "sudo mount -r /dev/sda3 /mnt"
-<Multi_key> <c> <W> <h> <space>                            : "cd /mnt/Users/frankliu197/"
-<Multi_key> <m> <u> <space>                                : "sudo mount /dev/sdb /mnt"
-
+<Multi_key> <U> <f> <space>                                : "sudo mkfs.vfat "
+<Multi_key> <m> <W> <space>                                : "sudo umount /dev/sda3; sudo mkdir -p /media/frankliu197/sda3 && sudo mount /dev/sda3 /media/frankliu197/sda3"
+<Multi_key> <m> <r> <W> <space>                            : "sudo umount /dev/sda3; sudo mkdir -p /media/frankliu197/sda3 && sudo mount -r /dev/sda3 /media/frankliu197/sda3"
+<Multi_key> <u> <W> <space>                                : "sudo umount /dev/sda3"
+<Multi_key> <c> <W> <h> <space>                            : "cd /media/frankliu197/sda3/Users/frankliu197/"
+<Multi_key> <m> <U> <space>                                : "sudo umount /dev/sdb; sudo mkdir -p /media/frankliu197/sdb && sudo mount /dev/sdb /media/frankliu197/sdb"
+<Multi_key> <c> <U> <space>                                : "cd /media/frankliu197/sdb"
+<Multi-key> <u> <U> <space>                                : "sudo umount /dev/sdb"
