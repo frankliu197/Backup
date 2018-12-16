@@ -1,0 +1,56 @@
+#!/bin/bash
+# MAY not work perfectly if you have edited 
+
+if ! [[ $PWD =~ /Compose$ ]]; then
+  read -p "Compose directory not found. Please cd into the Compose directory before excecuting this script. If you are sure you are in the right directory, press [ENTER] to continue. "
+  if ! [[ $key == "" ]]; then 
+    exit 0
+  fi
+fi
+
+ls -s $PWD/Compose ~/.XCompose
+sudo cat us >> /usr/share/X11/xkb/symbols/us
+
+lookfor='<layout>
+  <configItem>
+    <name>us</name>
+    <shortDescription>en</shortDescription>
+    <description>English (US)</description>
+    <languageList>
+      <iso639Id>eng</iso639Id>
+    </languageList>
+  </configItem>
+  <variantList>'
+
+replacewith='<layout>
+  <configItem>
+    <name>us</name>
+    <shortDescription>en</shortDescription>
+    <description>English (US)</description>
+    <languageList>
+      <iso639Id>eng</iso639Id>
+    </languageList>
+  </configItem>
+  <variantList>
+   <variant>
+      <configItem>
+        <name>custom_us</name>
+        <shortDescription>Custom US Keyboard</shortDescription>
+        <description>Custom US Keyboard</description>
+      </configItem>
+    </variant>
+'
+
+sudo sed "s/$lookfor/$replacewith/" /usr/share/X11/xkb/rules/evdev.xml
+
+lookfor='! variant'
+replacewith='! variant
+  custom_us       us: English (Custom)'
+sudo sed "s/$lookfor/$replacewith/" /usr/share/X11/xkb/rules/evdev.lst
+
+sudo cp /usr/share/X11/xkb/rules/evdev.lst /usr/share/X11/xkb/rules/base.lst
+sudo cp /usr/share/X11/xkb/rules/evdev.xml /usr/share/X11/xkb/rules/base.xml
+
+setxkbmap
+echo "Please use the following command to finish unistallation (you will log out): sudo systemctl restart lightdm"
+echo "Upon login, the custom-us keyboard should pop up as one of your system's available keyboards"
