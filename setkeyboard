@@ -1,0 +1,10 @@
+#!/bin/bash
+# Used to set fcitx input method in conjuction with the custom compose keys
+#
+# To use: add
+# . /PATH/TO/FILE in your bashrc
+
+export GTK_IM_MODULE=fctix
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export XCOMPOSEFILE=~/.XCompose
