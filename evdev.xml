@@ -1,0 +1,30 @@
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>us</name>
+        <shortDescription>en</shortDescription>
+        <description>English (US)</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>custom_us</name>
+            <shortDescription>Custom US Keyboard</shortDescription>
+            <description>Custom US Keyboard</description>
+          </configItem>
+        </variant>'
+        <variant>
+          <configItem>
+            <name>chr</name>
+            <shortDescription>chr</shortDescription>
+            <description>Cherokee</description>
+            <languageList>
+              <iso639Id>chr</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
