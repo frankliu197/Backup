@@ -32,8 +32,8 @@ with open(filename, 'w') as w:
     w.write(text.replace(lookfor, lookfor + add)) #inswert the required text
 
 lookfor = '! variant'
-add = '
-  custom_us       us: English (Custom)'
+add = """
+  custom_us       us: English (Custom)"""
 
 filename = xkbrules + 'evdev.lst'
 text = open(filename).read()

@@ -10,6 +10,7 @@ echo "Installing the custom-us keyboard"
 
 ls -s $PWD/Compose ~/.XCompose
 cat us | sudo tee -a /usr/share/X11/xkb/symbols/us
+sudo sed -i '/^[[:space:]]*$/d' /usr/share/X11/xkb/rules/evdev.xml
 
 sudo ./.install.py
 
